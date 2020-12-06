@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head> </head>
+    <script src="compile.js"></script>
+    <body>
+    
+        <textarea  id="code" cols="30" rows="10"></textarea>
+        <br>
+        <button onclick="mob()">runcode</button>
+
+        <script type="text/javascript">
+           function mob()
+           { 
+              let command= document.getElementById("code").value;
+             const program = command ;
+             
+             alert('your answer is '+evaluate(parse(lex(program))));
+           }
+       </script>
+       
+    </body>
+</html>
